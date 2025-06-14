@@ -1,145 +1,115 @@
 // function changeText() {
-//   let para = document.getElementById("message");
-
+//   let para = document.querySelector("#message");
 //   para.textContent = "Welcome!";
 // }
-// function showName() {
-//   let name = document.getElementById("nameInput").value;
 
-//   document.getElementById("result").textContent = name;
-// }
+function showName() {
+  let name = document.querySelector("#nameInput").value;
+  document.querySelector("#result").textContent = name;
+}
 
+function changeBackground() {
+  let container = document.querySelector("#container");
+  container.style.backgroundColor = "lightblue";
+}
 
-// function changeBackground() {
-//   let container = document.getElementById("container");
+function makeRed() {
+  let heading = document.querySelector("#mainTitle");
+  heading.style.color = "red";
+}
 
-//   container.style.backgroundColor = "lightblue";
-// }
+function displayNumber() {
+  let number = document.querySelector("#num1").value;
+  document.querySelector("#output").textContent = number;
+}
 
-// function makeRed() {
-//   let heading = document.getElementById("mainTitle");
+const button = document.querySelector(".submit-btn");
+button.addEventListener("click", function () {
+  console.log("Button Clicked");
+});
 
-//   heading.style.color = "red";
-// }
-// function displayNumber() {
-//   let number = document.getElementById("num1").value;
+function addValues() {
+  const num1 = Number(document.querySelector("#first").value);
+  const num2 = Number(document.querySelector("#second").value);
+  const total = num1 + num2;
+  document.querySelector("#sum").textContent = total;
+}
 
-//   document.getElementById("output").textContent = number;
-// }
+function updateText() {
+  const para = document.querySelector(".description");
+  para.textContent = "Updated successfully";
+}
 
-// const button = document.querySelector(".submit-btn");
+function styleBox() {
+  const box = document.querySelector("#box");
+  box.style.width = "200px";
+  box.style.backgroundColor = "green";
+}
 
-// button.addEventListener("click", function() {
-//   console.log("Button Clicked");
-// });
+function logEmail() {
+  const emailValue = document.querySelector("#email").value;
+  console.log("Entered email:", emailValue);
+}
 
-// function addValues() {
-//   const num1 = Number(document.getElementById("first").value);
-//   const num2 = Number(document.getElementById("second").value);
+function updateFontSize() {
+  const para = document.querySelector("#myPara");
+  para.style.fontSize = "24px";
+}
 
-//   const total = num1 + num2;
+function showGreeting() {
+  const name = document.querySelector("#fullName").value;
+  document.querySelector("#greeting").textContent = "Hello, " + name;
+}
 
-//   document.getElementById("sum").textContent = total;
-// }
+function changeImage() {
+  const image = document.querySelector("#profilePic");
+  image.src = "https://via.placeholder.com/200x200?text=New+Image";
+}
 
-// function updateText() {
-//   const para = document.querySelector(".description");
+function checkAgreement() {
+  const checkbox = document.querySelector("#agree");
+  const resultPara = document.querySelector("#result");
 
-//   para.textContent = "Updated successfully";
-// }
+  if (checkbox.checked) {
+    resultPara.textContent = "Agreed";
+  } else {
+    resultPara.textContent = "Not Agreed";
+  }
+}
 
-// function styleBox() {
-//   const box = document.getElementById("box");
+function showSelected() {
+  const dropdown = document.querySelector("#options");
+  const selected = dropdown.value;
+  document.querySelector("#selectedValue").textContent = selected;
+}
 
-//   box.style.width = "200px";
-//   box.style.backgroundColor = "green";
-// }
+function showDateTime() {
+  const now = new Date();
+  const formatted = now.toLocaleString();
+  document.querySelector("#dateTime").textContent = formatted;
+}
 
-// function logEmail() {
-//   const emailValue = document.getElementById("email").value;
+function hideParagraph() {
+  const para = document.querySelector("#togglePara");
+  para.style.display = "none";
+}
 
-//   console.log("Entered email:", emailValue);
-// // }
-// function updateFontSize() {
-//   const para = document.getElementById("myPara");
+function checkEligibility() {
+  const ageValue = document.querySelector("#age").value;
+  const age = Number(ageValue);
+  const statusSpan = document.querySelector("#status");
 
-//   para.style.fontSize = "24px";
-// }
+  if (age >= 18) {
+    statusSpan.textContent = "Eligible";
+  } else {
+    statusSpan.textContent = "Not Eligible";
+  }
+}
 
-// function showGreeting() {
-//   const name = document.getElementById("fullName").value;
-
-//   document.getElementById("greeting").textContent = "Hello, " + name;
-// }
-
-// function changeImage() {
-//   const image = document.getElementById("profilePic");
-
-//   image.src = "https://via.placeholder.com/200x200?text=New+Image";
-// }
-
-// function checkAgreement() {
-//   const checkbox = document.getElementById("agree");
-
-//   const resultPara = document.getElementById("result");
-
-//   if (checkbox.checked) {
-//     resultPara.textContent = "Agreed";
-//   } else {
-//     resultPara.textContent = "Not Agreed";
-//   }
-// }
-
-// function showSelected() {
-//   const dropdown = document.getElementById("options");
-
-//   const selected = dropdown.value;
-
-//   document.getElementById("selectedValue").textContent = selected;
-// }
-// function showDateTime() {
-//   const now = new Date();
-
-//   const formatted = now.toLocaleString();
-
-//   document.getElementById("dateTime").textContent = formatted;
-// }
-
-// function showDateTime() {
-//   const now = new Date();
-
-//   const formatted = now.toLocaleString();
-
-//   document.getElementById("dateTime").textContent = formatted;
-// }
-// function hideParagraph() {
-//   const para = document.getElementById("togglePara");
-
-//   para.style.display = "none";
-// }
-
-// function checkEligibility() {
-//   const ageValue = document.getElementById("age").value;
-
-//   const age = Number(ageValue);
-
-//   const statusSpan = document.getElementById("status");
-
-//   if (age >= 18) {
-//     statusSpan.textContent = "Eligible";
-//   } else {
-//     statusSpan.textContent = "Not Eligible";
-//   }
-// }
-
-// function clearInput() {
-//   const input = document.getElementById("searchBox");
-
-//   input.value = "";
-// }
-
-
-
+function clearInput() {
+  const input = document.querySelector("#searchBox");
+  input.value = "";
+}
 
 
 
