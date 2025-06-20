@@ -1,25 +1,21 @@
-// function changeText() {
-//   let para = document.querySelector("#message");
-//   para.textContent = "Welcome!";
-// }
 
 function showName() {
-  let name = document.querySelector("#nameInput").value;
+  name = document.querySelector("#nameInput").value;
   document.querySelector("#result").textContent = name;
 }
 
 function changeBackground() {
-  let container = document.querySelector("#container");
+   container = document.querySelector("#container");
   container.style.backgroundColor = "lightblue";
 }
 
 function makeRed() {
-  let heading = document.querySelector("#mainTitle");
+   heading = document.querySelector("#mainTitle");
   heading.style.color = "red";
 }
 
 function displayNumber() {
-  let number = document.querySelector("#num1").value;
+   number = document.querySelector("#num1").value;
   document.querySelector("#output").textContent = number;
 }
 
@@ -66,16 +62,6 @@ function changeImage() {
   image.src = "https://via.placeholder.com/200x200?text=New+Image";
 }
 
-function checkAgreement() {
-  const checkbox = document.querySelector("#agree");
-  const resultPara = document.querySelector("#result");
-
-  if (checkbox.checked) {
-    resultPara.textContent = "Agreed";
-  } else {
-    resultPara.textContent = "Not Agreed";
-  }
-}
 
 function showSelected() {
   const dropdown = document.querySelector("#options");
@@ -110,10 +96,6 @@ function clearInput() {
   const input = document.querySelector("#searchBox");
   input.value = "";
 }
-
-
-
-
 
 
 
